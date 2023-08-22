@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet's Care</title>
+
+    <!--SCRIPT SOURCE-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- TITTLE -->
+    <header>
+        <div>
+            <h1>Pet's Care</h1>
+        </div>
+    </header>
+
+    <!-- SUBSCRIPTION FORM -->
+    <section>
+        <div class="container"></div>
+            <h1>Lunch Subcription</h1>
+              <p>Subscribe to receive a notification on the launch day of our Pet's Care web application.</p>
+            
+              <form id="form">
+              
+                <div class="field">
+                  <label for="from_name">Name</label>
+                  <input type="text" name="from_name" id="from_name">
+                </div>
+
+                <div class="field">
+                  <label for="reply_to">Email</label>
+                  <input type="text" name="reply_to" id="reply_to">
+                </div>
+              
+                <input type="submit" id="button" value="Subscribe" >
+
+              </form>
+    </section>
+
+    <!-- SCRIPT CODE FOR FORM -->
+    <script>
+        emailjs.init('7TRgtk5LmOjnvH0v-')
+        const btn = document.getElementById('button');
+        const serviceID = 'service_ic7d2r6';
+        const templateID = 'template_61h61r7';
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        btn.value = 'Sending...';
+        
+        emailjs.sendForm(serviceID, templateID, this).then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
+        });
+    </script>
+
+    <!-- OUR MISSION -->
+    <section>
+        <div>
+            <h3>Our mission</h3>
+            <p>Our mission is to be able to create a web application where the user can have access to valuable information about their pet. 
+               How to feed, bathe and vaccinate them are essential to have healthy pets. Knowledge about the care of our pet is essential for
+               our health and that of others.
+            </p>
+        </div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section>
+        <div>
+            <h3>Decription</h3>
+            <p>A web application created for the care of our pets. Here you will find tools and tutorials that will help you with the feeding, 
+               vaccination and care of our pet.
+            </p>
+        </div>
+    </section>
+
+    <!-- EMAIL SUBCRIPTION -->
+    <section>
+        <div>
+            <h3>Subcribe</h3>
+                <p>Subscribe so you can receive an invitation and be part of the launch of our new web app called Pet's Care. 
+                   This new app application will be released worldwide on Demo Day on Friday, November 17, 2023.
+                </p>
+        </div>
+    </section>
+</div>
+</body>
+</html>
