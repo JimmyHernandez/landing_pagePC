@@ -1,0 +1,90 @@
+/* styles/main.css */
+
+/* Reset */
+body, h1, h2, h3, p, label {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.title {
+    font-size: 3rem;
+    color: #120ee1;
+}
+
+/* Sections */
+.section-title {
+    font-size: 2rem;
+    color: #514caf;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1.1rem;
+}
+
+/* Subscription Form */
+.subscription-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+/* Subscribe Button */
+.subscribe-button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #4caf50;
+    text-decoration: none;
+    border-bottom: 1px solid #4caf50;
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s ease;
+}
+
+.footer a:hover {
+    border-bottom: 2px solid #4caf50;
+}
