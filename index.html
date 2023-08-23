@@ -11,10 +11,11 @@
         <h1 class="title">Pet's Care</h1>
     </header>
 
-    <section class="subscription">
-        <div class="container">
-            <h2 class="section-title">Launch Subscription</h2>
-            <p class="section-description">Subscribe to receive a notification on the launch day of our Pet's Care web application.</p>
+    <!-- SUBSCRIPTION FORM -->
+    <section>
+        <div class="container"></div>
+            <h1>Lunch Subcription</h1>
+                <p>Subscribe to receive a notification on the launch day of our Pet's Care web application.</p>
             
             <form id="form" class="subscription-form">
                 <div class="form-field">
@@ -30,34 +31,63 @@
         </div>
     </section>
 
-    <section class="mission">
-        <div class="container">
-            <h3 class="section-title">Our Mission</h3>
-            <p class="section-description">Our mission is to be able to create a web application where the user can have access to valuable information about their pet. How to feed, bathe and vaccinate them are essential to have healthy pets. Knowledge about the care of our pet is essential for our health and that of others.</p>
+    <!-- OUR MISSION -->
+    <section>
+        <div>
+            <h3>Our mission</h3>
+                <p>Our mission is to be able to create a web application where the user can have access to valuable information about their pet. 
+                How to feed, bathe and vaccinate them are essential to have healthy pets. Knowledge about the care of our pet is essential for
+                our health and that of others.
+                </p>
         </div>
     </section>
 
-    <section class="description">
-        <div class="container">
-            <h3 class="section-title">Description</h3>
-            <p class="section-description">A web application created for the care of our pets. Here you will find tools and tutorials that will help you with the feeding, vaccination and care of our pet.</p>
+    <!-- DESCRIPTION -->
+    <section>
+        <div>
+            <h3>Decription</h3>
+                <p>A web application created for the care of our pets. Here you will find tools and tutorials that will help you with the feeding, 
+                vaccination and care of our pet.
+                </p>
         </div>
     </section>
 
-    <section class="subscribe">
-        <div class="container">
-            <h3 class="section-title">Subscribe</h3>
-            <p class="section-description">Subscribe so you can receive an invitation and be part of the launch of our new web app called Pet's Care. This new app application will be released worldwide on Demo Day on Friday, November 17, 2023.</p>
+    <!-- EMAIL SUBCRIPTION -->
+    <section>
+        <div>
+            <h3>Subscribe</h3>
+                <p>Subscribe so you can receive an invitation and be part of the launch of our new web app called Pet's Care. 
+                   This new app application will be released worldwide on Demo Day on Friday, November 17, 2023.
+                </p>
         </div>
     </section>
      
-    <footer class="footer">
-        <p>Collaborators:</p>
-        <p>Jimmy Hernandez Rivera - Enyel Feliz Mercado - Jose Acevedo</p>
-        <a href="mailto:jimoem24@gmail.com">Contact Us</a>
-    </footer>
+    <!-- SCRIPT CODE FOR FORM -->
+    <script>
+        emailjs.init('7TRgtk5LmOjnvH0v-')
+        const btn = document.getElementById('button');
+        const serviceID = 'service_ic7d2r6';
+        const templateID = 'template_61h61r7';
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="scripts/script.js"></script>
+        document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        btn.value = 'Sending...';
+        
+        emailjs.sendForm(serviceID, templateID, this).then(() => {
+            btn.value = 'Send Email';
+            alert('Subscribed!');
+
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
+        });
+    </script>
 </body>
+<footer>
+    <p>Collaborators:</p>
+    <p>Jimmy Hernandez Rivera - Enyel Feliz Mercado - Jose Acevedo</p>
+    <a href="mailto:jimoem24@gmail.com">Contact Us</a>
+</footer>
 </html>
