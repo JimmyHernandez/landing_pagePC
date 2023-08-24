@@ -25,7 +25,6 @@
     <!--FORM-->
     <section>
             <form id="form" class="subscription-form">
-                
                 <div class="form-field">
                     <!-- NAME -->
                     <label for="from_name">Name:</label>
@@ -72,6 +71,29 @@
 <br>
 <br>
 <br>
+    <!-- SCRIPT CODE FOR FORM -->
+    <script>
+        emailjs.init('7TRgtk5LmOjnvH0v-')
+        const btn = document.getElementById('button');
+        const serviceID = 'service_ic7d2r6';
+        const templateID = 'template_61h61r7';
+
+        document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        emailjs.sendForm(serviceID, templateID, this).then(() => {
+            btn.value = 'Send Email';
+            alert('Subscribed!');
+
+        }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+        });
+        });
+    </script>
+    
     <!-- FOOTER -->
     <footer class="footer">
         <p>Collaborators:</p>
