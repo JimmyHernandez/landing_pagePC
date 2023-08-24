@@ -5,59 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <title>Pet's Care</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
+
 <body>
+    <!--TITTLE-->
     <header class="header">
         <h1 class="title">Pet's Care</h1>
     </header>
 
+    <!-- SUBSCRIPTION INFORMATION-->
     <section class="subscription">
         <div class="container">
             <h2 class="section-title">Launch Subscription</h2>
-            <p class="section-description">Subscribe to receive a notification on the launch day of our Pet's Care web application.</p>
-            
+            <p class="section-description">Subscribe to receive a notification on the launch day of our Pet's Care 
+            web application.</p>
+    </section>  
+
+    <!--FORM-->
+    <section>
             <form id="form" class="subscription-form">
+                
                 <div class="form-field">
+                    <!-- NAME -->
                     <label for="from_name">Name:</label>
                     <input type="text" name="from_name" id="from_name">
-                </div>
-                <div class="form-field">
-                    <label for="reply_to">Email:</label>
+                    <!-- EMAIL -->
+                    <label for="reply_to">  Email:</label>
                     <input type="text" name="reply_to" id="reply_to">
+                    <!-- BUTTON -->
+                    <input type="submit" id="button" class="subscribe-button" value="Subscribe">
                 </div>
-                <input type="submit" id="button" class="subscribe-button" value="Subscribe">
             </form>
+
         </div>
     </section>
 
-    <section class="mission">
-        <div class="container">
+<main id = "boxes">
+
+    <!-- MISSION -->
+    <section class="section1">
+        <div id = "column1" class="container">
             <h3 class="section-title">Our Mission</h3>
             <p class="section-description">Our mission is to be able to create a web application where the user can have access to valuable information about their pet. How to feed, bathe and vaccinate them are essential to have healthy pets. Knowledge about the care of our pet is essential for our health and that of others.</p>
         </div>
     </section>
 
-    <section class="description">
-        <div class="container">
+    <!-- DESCRIPTION -->
+    <section class="section2">
+        <div id = "column2" class="container">
             <h3 class="section-title">Description</h3>
             <p class="section-description">A web application created for the care of our pets. Here you will find tools and tutorials that will help you with the feeding, vaccination and care of our pet.</p>
         </div>
     </section>
 
-    <section class="subscribe">
-        <div class="container">
+    <!-- SUBSCRIBE -->
+    <section class="section3">
+        <div id = "column3" class="container">
             <h3 class="section-title">Subscribe</h3>
             <p class="section-description">Subscribe so you can receive an invitation and be part of the launch of our new web app called Pet's Care. This new app application will be released worldwide on Demo Day on Friday, November 17, 2023.</p>
         </div>
     </section>
-     
+    </main>
+
+    <!-- FOOTER -->
     <footer class="footer">
         <p>Collaborators:</p>
         <p>Jimmy Hernandez Rivera - Enyel Feliz Mercado - Jose Acevedo</p>
         <a href="mailto:jimoem24@gmail.com">Contact Us</a>
     </footer>
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="scripts/script.js"></script>
 </body>
 </html>
