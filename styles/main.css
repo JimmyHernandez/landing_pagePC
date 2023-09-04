@@ -252,3 +252,16 @@ h1 {
 .footer a:hover {
   border-bottom: 2px solid #4caf50;
 }
+
+/* Estilos para el logo */
+.logo {
+    width: 150px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    display: block; /* Para centrar el logo horizontalmente */
+    margin: 0 auto; /* Para centrar el logo horizontalmente */
+    border-radius: 11%; /* Hacer que el logo sea circular (opcional) */
+    border: 3px solid #115DFC; /* Borde alrededor del logo */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra alrededor del logo */
+}
+
+/* Estilos adicionales para el logo si es necesario */
