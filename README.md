@@ -1,5 +1,5 @@
 ### Pet's Care Landing Page
-<img src="https://ik.imagekit.io/ikmedia/women-dress-2.jpg](https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/PetsCareLogo.png" 
+<img src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/PetsCareLogo.png" 
      width="400" 
      height="500" />
 
