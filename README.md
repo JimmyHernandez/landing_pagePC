@@ -1,18 +1,19 @@
-### Pet's Care Landing Page
-<img src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/PetsCareLogo.png" 
-     width="400" 
-     height="500" />
+# Pet's Care Landing Page
 
-## Project Overview
+<p align="center">
+    <img width="550" src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/PetsCareLogo.png" alt="Alt Text" alt="Material Bread logo">
+</p>
+
+### Project Overview
 
 This repository is designed to house the files necessary for the launch of our landing page as a preamble to the launch of our project called "Pet's Care" on Demo Day.
 
-## Landing Page
-<img src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/Screenshot%20from%202023-09-13%2014-38-54.png" 
-     width="400" 
-     height="500" />
+### Landing Page
 
-## Technologies used:
+<a href="default.asp"><img src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/Screenshot%20from%202023-09-13%2014-38-54.png" alt="HTML tutorial" style="width:400;"></a>
+
+### Technologies used:
+
 <ul style="list-style-type:circle;">
    <li>HTML</li>
    <li>CSS</li>
@@ -20,6 +21,7 @@ This repository is designed to house the files necessary for the launch of our l
    <li>Firebase</li>
 </ul>
 
-## Contact Info:
-- Enyel Feliz Mercado <Enyelfm@gmail.com>
+### Contact Info:
+
 - Jimmy Hernandez Rivera <jimoem24@gmail.com>
+- Enyel Feliz Mercado <Enyelfm@gmail.com>
