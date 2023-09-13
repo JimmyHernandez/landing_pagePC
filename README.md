@@ -10,7 +10,7 @@ This repository is designed to house the files necessary for the launch of our l
 
 ### Landing Page
 
-<a href="default.asp"><img src="https://github.com/JimmyHernandez/landing_pagePC/blob/main/image/Screenshot%20from%202023-09-13%2014-38-54.png" alt="HTML tutorial" style="width:400;"></a>
+<a href="default.asp"><img src="https://landingpage-a744a.web.app/" alt="HTML tutorial" style="width:400;"></a>
 
 ### Technologies used:
 
